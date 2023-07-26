@@ -1,0 +1,26 @@
+[tool.ruff]
+select = ["E", "F", "W"]
+extend-select = ["C4", "SIM", "TCH", "E231", "C901"]
+line-length = 120
+target-version = "py37"
+
+[tool.ruff.isort]
+force-single-line = true
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "single"
+
+[tool.ruff.mccabe]
+# Flag errors (`C901`) whenever the complexity level exceeds 5.
+max-complexity = 5
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.mypy]
+python_version = "3.11"
+files = ["src"]
+explicit_package_bases = true
+strict = true
+pretty = true
