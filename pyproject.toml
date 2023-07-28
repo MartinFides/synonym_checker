@@ -1,6 +1,11 @@
+[tool.black]
+line-length = 120
+target-version = ["py311"]
+skip-magic-trailing-comma = true
+
 [tool.ruff]
 select = ["E", "F", "W"]
-extend-select = ["C4", "SIM", "TCH", "E231", "C901"]
+extend-select = ["C4", "SIM", "TCH", "E231", "C901", "I001", "I002", "E501"]
 line-length = 120
 target-version = "py37"
 
