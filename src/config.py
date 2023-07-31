@@ -23,5 +23,5 @@ class SettingsModel(BaseSettings):
 
 
 class Settings(SettingsModel):
-    resource_file_path: SettingsConfigDict = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
-    export_file_path: SettingsConfigDict = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
+    resource_file_path: str = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")  # type: ignore[assignment]
+    export_file_path: str = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")  # type: ignore[assignment]
