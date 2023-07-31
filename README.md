@@ -55,7 +55,7 @@ chmod +x startup.sh
   ./startup.sh
 ```
 
-This will execute the main script and export the results into the `solution` folder.
+This will execute the main script and export the results into the `result` folder.
 
 ## License
 This project is licensed under the [MIT License](LICENSE).
