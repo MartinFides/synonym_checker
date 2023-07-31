@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 data = "*"
+pydantic-settings = "*"
 
 [dev-packages]
 ruff = "*"
