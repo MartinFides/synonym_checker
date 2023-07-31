@@ -46,8 +46,9 @@ To install and run the app, follow these steps:
 RESOURCE_FILE_PATH = "/test/resources/test.in"
 EXPORT_FILE_PATH = "/result/test.out"
 ```
-- Make sure startup.sh is executable:
+- Make sure install.sh and startup.sh are executable:
 ```shell
+chmod +x install.sh
 chmod +x startup.sh
 ```
 - Run the installation script:
