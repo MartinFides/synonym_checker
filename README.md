@@ -50,6 +50,10 @@ EXPORT_FILE_PATH = "/result/test.out"
 ```shell
 chmod +x startup.sh
 ```
+- Run the installation script:
+```shell
+  ./install.sh
+```
 - Run the startup script:
 ```shell
   ./startup.sh
