@@ -1,13 +1,64 @@
-# BP_SYNONYMS
+# Synonym Checker
+## Description
+This program is designed to determine whether two words are synonyms or not, based on a given synonym dictionary.
+The program follows specific rules to make this decision.
 
-1. Initialise `pipenv` and install all the dependencies (if you omit `--dev` then only runtime dependencies will be installed):
-    ```sh
-    pipenv shell
-    pipenv install --dev
-    ```
-    This will create a virtual environment in `~/.local/share/virtualenvs/`.
+### Rules for Synonym Determination
+1. If the pair of words is declared synonymous in the input, then they are synonyms.
+2. Being synonyms doesn’t depend on order, e.g. if big is a synonym for large then large is a
+synonym for big.
+3. We can derive the synonymous relationship indirectly: if big is a synonym for large and large is a
+synonym for huge then big is a synonym for huge.
+4. If two words differ only by case, they are synonyms, e.g. same is a synonym for both SAmE and
+SAME.
+5. If none of the above rules can be used to decide whether two words are synonyms, then they
+are not.
 
-1. Install `pre-commit` hooks:
-    ```sh
-    pre-commit install -t pre-commit
-    ```
+## Prerequisites
+Before running the Synonym Checker program, ensure you have the following prerequisites installed on your system:
+
+- `Ubuntu`: The program is developed and tested on Ubuntu, and it should work on other Linux distributions as well.
+Ensure you have Ubuntu installed on your machine.
+
+- `Python 3.11`: The program requires Python 3.11 to run.
+
+- `pipenv`: The recommended way to manage dependencies for this project is using pipenv.
+To install the latest version of pipenv, you can use pipx (recommended) or install it using your system Python.
+
+Using pipx (recommended):
+```shell
+sudo apt-get -y install pipx
+pipx install pipenv
+```
+
+## Installation
+To install and run the app, follow these steps:
+- Clone the repository:
+```shell
+  git clone https://github.com/MartinFides/synonym_checker.git
+```
+- Change project directory:
+```shell
+  cd Synonym Checker
+```
+- Setup paths in `config.env` file if necessary (default):
+```env
+RESOURCE_FILE_PATH = "/test/resources/test.in"
+EXPORT_FILE_PATH = "/result/test.out"
+```
+- Make sure startup.sh is executable:
+```shell
+chmod +x startup.sh
+```
+- Run the startup script:
+```shell
+  ./startup.sh
+```
+
+This will execute the main script and export the results into the `solution` folder.
+
+## License
+This project is licensed under the [MIT License](LICENSE).
+
+## Author
+Martin Fides
