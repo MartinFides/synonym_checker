@@ -35,7 +35,7 @@ def export_file(path_to_file: Path, data: list[list[str]]) -> None:
 
 def main() -> None:
     logger.info(f"Reading configuration file: {CONFIG}")
-    settings = Settings(_env_file=get_file_path(CONFIG), _env_file_encoding="utf-8")
+    settings = Settings(_env_file=get_file_path(CONFIG), _env_file_encoding="utf-8")  # type: ignore[call-arg]
 
     logger.info(f"Reading data from file on path: {settings.resource_file_path}")
     raw_data = read_file(get_file_path(settings.resource_file_path))
