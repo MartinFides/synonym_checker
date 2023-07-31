@@ -1,4 +1,4 @@
-from src.type_alias import Synonyms
+from type_alias import Synonyms
 
 
 def merge_synonyms(existing_synonyms: list[Synonyms], new_synonyms: Synonyms) -> list[Synonyms]:

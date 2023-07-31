@@ -3,11 +3,11 @@ from typing import Any
 from typing import Iterator
 from typing import Self
 
-from src.base import BaseModel
-from src.type_alias import Data
-from src.type_alias import Synonyms
-from src.util import merge_synonyms
-from src.util import merge_synonyms_list
+from base import BaseModel
+from type_alias import Data
+from type_alias import Synonyms
+from util import merge_synonyms
+from util import merge_synonyms_list
 
 
 @dataclass
