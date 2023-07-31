@@ -15,7 +15,7 @@ SAME.
 are not.
 
 ## Prerequisites
-Before running the Synonym Checker program, ensure you have the following prerequisites installed on your system:
+Before running the Synonym Checker program, ensure you have a supported system and the following prerequisites installed:
 
 - `Ubuntu`: The program is developed and tested on Ubuntu, and it should work on other Linux distributions as well.
 Ensure you have Ubuntu installed on your machine.
