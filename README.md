@@ -39,7 +39,7 @@ To install and run the app, follow these steps:
 ```
 - Change project directory:
 ```shell
-  cd Synonym Checker
+  cd synonym_checker
 ```
 - Setup paths in `config.env` file if necessary (default):
 ```env
